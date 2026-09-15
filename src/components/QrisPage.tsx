@@ -130,7 +130,7 @@ export const QrisPage: React.FC<QrisPageProps> = ({ onBack }) => {
           Dukung <span className="text-[#ffa92d]">EDUNEXUS INDONESIA</span>
         </h1>
         <p className="mt-2 text-[#d2e4f7] text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
-          Bantuan dan donasi sukarela Anda sangat berharga untuk pemeliharaan server, pembaruan kurikulum, dan penyediaan media belajar interaktif bebas biaya bagi generasi penerus bangsa.
+          Bantuan dan donasi sukarela Anda sangat berharga untuk pemeliharaan server, pengembangan untuk penyediaan lebih banyak lagi aplikasi, dan penyediaan media belajar interaktif bebas biaya bagi sekolah-sekolah dengan keterbatasan sumber daya finansial, dan demi generasi penerus bangsa.
         </p>
       </div>
 
