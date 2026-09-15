@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%" shape-rendering="geometricPrecision">
+  <!-- 1. TOP-LEFT: YELLOW 'E' (3 horizontal bars separated by white stripes) -->
+  <g id="letter-e">
+    <!-- Top Bar with large rounded top-left corner -->
+    <path d="M 120 0 L 476 0 Q 500 0 500 24 L 500 152 L 0 152 L 0 120 Q 0 0 120 0 Z" fill="#FED036" />
+    <!-- Middle Bar -->
+    <rect x="0" y="174" width="500" height="152" fill="#FED036" />
+    <!-- Bottom Bar with slightly rounded bottom corners -->
+    <path d="M 0 348 L 500 348 L 500 476 Q 500 500 476 500 L 24 500 Q 0 500 0 476 L 0 348 Z" fill="#FED036" />
+  </g>
+
+  <!-- 2. TOP-RIGHT: PINK 'D' (Flat left edge, bold semicircle rounded right) -->
+  <g id="letter-d">
+    <path d="M 524 24 Q 524 0 548 0 L 752 0 C 889 0 1000 112 1000 250 C 1000 388 889 500 752 500 L 548 500 Q 524 500 524 476 Z" fill="#FF4E9E" />
+  </g>
+
+  <!-- 3. BOTTOM-LEFT: CYAN & DARK TEAL 'N' -->
+  <g id="letter-n">
+    <!-- Left Pillar with rounded bottom-left outer corner -->
+    <path d="M 0 548 Q 0 524 24 524 L 166 524 L 166 1000 L 120 1000 Q 0 1000 0 880 Z" fill="#00C2E8" />
+    <!-- Right Block: Solid Cyan upper triangle & right column -->
+    <path d="M 166 524 L 476 524 Q 500 524 500 548 L 500 976 Q 500 1000 476 1000 L 334 1000 L 334 524 Z" fill="#00C2E8" />
+    <!-- Dark Teal Origami Shadow Diagonal -->
+    <polygon points="166,524 166,808 334,976 334,524" fill="#0082A6" />
+    <!-- Top-right corner of the N right block is cyan -->
+    <path d="M 334 524 L 476 524 Q 500 524 500 548 L 500 976 Q 500 1000 476 1000 L 334 1000 Z" fill="#00C2E8" />
+  </g>
+
+  <!-- 4. BOTTOM-RIGHT: ORANGE 'X' -->
+  <g id="letter-x">
+    <!-- Rotated 45 degrees rounded cross centered at (762, 750) -->
+    <g transform="translate(750, 750) rotate(45)">
+      <rect x="-260" y="-82" width="520" height="164" rx="82" ry="82" fill="#FF7020" />
+      <rect x="-82" y="-260" width="164" height="520" rx="82" ry="82" fill="#FF7020" />
+    </g>
+  </g>
+</svg>
