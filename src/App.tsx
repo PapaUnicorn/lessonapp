@@ -1,13 +1,51 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { JenjangType, LearningItem } from './types';
 import { LEARNING_DATA, JENJANG_CONFIG } from './data/learningData';
 import { getSubjectIcon } from './utils/iconHelper';
 import { LogoSD, LogoSMP, LogoSMA } from './components/SchoolLogos';
 import { ArrowLeft, ExternalLink, Sparkles } from 'lucide-react';
+import { Footer } from './components/Footer';
+import { QrisPage } from './components/QrisPage';
 
 export default function App() {
   // State: null means on the initial landing state with 3 large centered hero buttons (SD, SMP, SMA)
   const [currentJenjang, setCurrentJenjang] = useState<JenjangType | null>(null);
+  const [isQrisPage, setIsQrisPage] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      return window.location.hash === '#dukung-kami' || window.location.hash === '#qris';
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (window.location.hash === '#dukung-kami' || window.location.hash === '#qris') {
+        setIsQrisPage(true);
+      } else if (isQrisPage && window.location.hash === '') {
+        setIsQrisPage(false);
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [isQrisPage]);
+
+  const handleOpenQris = () => {
+    setIsQrisPage(true);
+    if (typeof window !== 'undefined') {
+      window.location.hash = '#dukung-kami';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handleBackFromQris = () => {
+    setIsQrisPage(false);
+    if (typeof window !== 'undefined') {
+      if (window.location.hash === '#dukung-kami' || window.location.hash === '#qris') {
+        history.pushState(null, '', window.location.pathname + window.location.search);
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   // Counts of subjects per jenjang
   const counts = useMemo(() => {
@@ -31,8 +69,10 @@ export default function App() {
       {/* Subtle ambient lighting for depth on denim background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_15%,rgba(61,107,157,0.5),transparent_70%)] pointer-events-none" />
 
-      {/* INITIAL SCREEN: Only 3 large centered hero buttons (SD, SMP, SMA) */}
-      {currentJenjang === null ? (
+      {/* SCREEN VIEW LOGIC */}
+      {isQrisPage ? (
+        <QrisPage onBack={handleBackFromQris} />
+      ) : currentJenjang === null ? (
         <div
           id="landing-hero-screen"
           className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 sm:px-6 py-12 max-w-4xl mx-auto w-full text-center"
@@ -250,6 +290,9 @@ export default function App() {
           </div>
         </div>
       )}
+
+      {/* FOOTER: Disediakan oleh EDUNEXUS INDONESIA, Kritik & Saran WhatsApp, Dukung Kami */}
+      <Footer onOpenQris={handleOpenQris} isQrisPage={isQrisPage} />
     </div>
   );
 }
