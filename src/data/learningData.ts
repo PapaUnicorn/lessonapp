@@ -84,18 +84,18 @@ export const LEARNING_DATA: LearningItem[] = [
     ],
     tools: [
       {
+        name: 'Mathigon',
+        url: 'https://mathigon.org',
+        type: 'Kanvas Virtual Matematika',
+        description: 'Papan tulis matematika visual terbaik dunia dengan alat geometri, tangram, manipulatif pecahan, dan dadu virtual.',
+        tag: 'Interaktif'
+      },
+      {
         name: 'Toy Theater',
         url: 'https://toytheater.com/category/math/',
         type: 'Games & Manipulatif',
         description: 'Alat peraga matematika ramah anak: timbangan, jam analog, balok pecahan & teka-teki seru.',
         tag: 'Cocok Pemula'
-      },
-      {
-        name: 'Mathigon Polypad',
-        url: 'https://mathigon.org/polypad',
-        type: 'Kanvas Virtual Bebas',
-        description: 'Papan tulis matematika visual terbaik dunia dengan alat geometri, tangram, dan dadu virtual.',
-        tag: 'Sangat Populer'
       }
     ],
     icon: 'Calculator',
@@ -117,9 +117,9 @@ export const LEARNING_DATA: LearningItem[] = [
     tools: [
       {
         name: 'PhET Interactive Simulations',
-        url: 'https://phet.colorado.edu/in/',
+        url: 'https://phet.colorado.edu',
         type: 'Lab Virtual Sains',
-        description: 'Simulasi sains interaktif berbahasa Indonesia dari University of Colorado Boulder.',
+        description: 'Simulasi sains interaktif dari University of Colorado Boulder.',
         tag: 'Resmi & Gratis'
       },
       {
@@ -186,7 +186,7 @@ export const LEARNING_DATA: LearningItem[] = [
         tag: 'Ribuan Buku'
       },
       {
-        name: 'British Council LearnEnglish Kids',
+        name: 'British Council Kids',
         url: 'https://learnenglishkids.britishcouncil.org/',
         type: 'Media Bahasa Inggris',
         description: 'Lagu interaktif, video animasi pendek, latihan pengucapan fonik, dan permainan kata bahasa Inggris.',
@@ -266,23 +266,30 @@ export const LEARNING_DATA: LearningItem[] = [
     jenjang: 'SMP',
     mataPelajaran: 'Matematika',
     categoryGroup: 'Matematika',
-    fokus: 'Aljabar, grafik fungsi, koordinat Kartesius, bangun ruang',
-    deskripsiRingkas: 'Visualisasikan persamaan garis lurus, sistem koordinat dua dimensi, serta jaring-jaring bangun ruang secara dinamis.',
+    fokus: 'Aljabar, manipulatif geometri, grafik fungsi, & koordinat Kartesius',
+    deskripsiRingkas: 'Visualisasikan persamaan garis lurus, bangun datar-ruang secara dinamis, serta manipulatif aljabar interaktif.',
     caraBelajar: [
-      'Ubah nilai gradien m dan konstanta c pada fungsi y = mx + c untuk melihat pergeseran garis.',
-      'Plot titik-titik koordinat pada bidang Kartesius untuk membentuk bangun poligon.',
-      'Gunakan slider nilai di Desmos untuk mengamati pergerakan kurva kuadrat.'
+      'Ubah nilai gradien m dan konstanta c pada fungsi y = mx + c di GeoGebra.',
+      'Gunakan kanvas manipulatif Mathigon untuk mengeksplorasi jaring-jaring bangun dan pecahan.',
+      'Plot grafik fungsi kuadrat dan sistem persamaan linier di Desmos.'
     ],
     tools: [
       {
-        name: 'GeoGebra Classic',
-        url: 'https://www.geogebra.org/classic',
-        type: 'Software Matematika Lengkap',
-        description: 'Paket kalkulator aljabar, geometri analitik, dan tabel statistik paling banyak digunakan di sekolah.',
+        name: 'GeoGebra',
+        url: 'https://geogebra.org',
+        type: 'Software Matematika Interaktif',
+        description: 'Paket lengkap aljabar, geometri analitik, kalkulator grafik, dan alat peraga matematika dinamis.',
         tag: 'Paling Lengkap'
       },
       {
-        name: 'Desmos Graphing Calculator',
+        name: 'Mathigon',
+        url: 'https://mathigon.org',
+        type: 'Kanvas Manipulatif & Polypad',
+        description: 'Buku teks matematika interaktif dengan kanvas manipulatif geometri, ubin aljabar, dan visualisasi bilangan.',
+        tag: 'Interaktif'
+      },
+      {
+        name: 'Desmos Calculator',
         url: 'https://www.desmos.com/calculator',
         type: 'Kalkulator Grafik Cepat',
         description: 'Kalkulator grafik super responsif dengan animasi slider parameter dan tampilan kurva presisi.',
@@ -294,31 +301,31 @@ export const LEARNING_DATA: LearningItem[] = [
     tingkatKelas: 'Kelas 7 - 9 SMP'
   },
   {
-    id: 'smp-ipa',
+    id: 'smp-ipa-biologi',
     jenjang: 'SMP',
-    mataPelajaran: 'IPA Terpadu',
+    mataPelajaran: 'IPA (Biologi)',
     categoryGroup: 'Sains',
-    fokus: 'Simulasi listrik statis/dinamis, sel biologi, & tata surya',
-    deskripsiRingkas: 'Uji coba rangkaian lampu seri-paralel, intip struktur sel membran dan inti sel, serta jelajahi orbit planet di langit malam.',
+    fokus: 'Struktur sel, fotosintesis, genetika dasar, & ekosistem makhluk hidup',
+    deskripsiRingkas: 'Simulasi interaktif mikroskopis organel sel hidup, rantai makanan ekosistem, seleksi alam, dan hereditas sifat.',
     caraBelajar: [
-      'Rakit baterai, saklar, dan resistor di lab sirkuit PhET tanpa risiko korsleting.',
-      'Gunakan teleskop virtual Stellarium untuk mencari rasi bintang dan posisi Jupiter malam ini.',
-      'Pelajari organel sel tumbuhan dan hewan dengan model animasi 3D di Cells Alive.'
+      'Jalankan simulasi biologi interaktif di PhET untuk memahami seleksi alam dan fotosintesis.',
+      'Eksplorasi model DNA, pembelahan sel, dan adaptasi ekosistem di Concord Consortium.',
+      'Pelajari organel sel tumbuhan dan hewan dengan model animasi di Cells Alive.'
     ],
     tools: [
       {
-        name: 'PhET Circuit & Physics',
-        url: 'https://phet.colorado.edu/in/',
-        type: 'Simulasi Rangkaian & Fisika',
-        description: 'Eksperimen listrik arus searah, hukum Ohm, dan gaya gravitasi langsung di browser.',
-        tag: 'Praktikum Virtual'
+        name: 'PhET Interactive Simulations',
+        url: 'https://phet.colorado.edu',
+        type: 'Lab Virtual Sains & Biologi',
+        description: 'Simulasi interaktif seleksi alam, ekspresi genetik, dan ekosistem dari University of Colorado Boulder.',
+        tag: 'Resmi PhET'
       },
       {
-        name: 'Stellarium Web',
-        url: 'https://stellarium-web.org/',
-        type: 'Planetarium Web Real-time',
-        description: 'Peta kubah langit malam realistis yang menunjukkan lokasi planet, satelit, dan bintang dari lokasi kamu.',
-        tag: 'Tata Surya 3D'
+        name: 'Concord Consortium',
+        url: 'https://learn.concord.org',
+        type: 'Modul Pembelajaran STEM',
+        description: 'Aktivitas eksplorasi interaktif genetika, adaptasi makhluk hidup, dan ekologi berbasis model sains.',
+        tag: 'STEM Model'
       },
       {
         name: 'Cells Alive',
@@ -328,28 +335,67 @@ export const LEARNING_DATA: LearningItem[] = [
         tag: 'Biologi Sel'
       }
     ],
+    icon: 'Leaf',
+    popular: true,
+    tingkatKelas: 'Kelas 7 - 9 SMP'
+  },
+  {
+    id: 'smp-ipa-kimia',
+    jenjang: 'SMP',
+    mataPelajaran: 'IPA (Kimia)',
+    categoryGroup: 'Sains',
+    fokus: 'Partikel materi, wujud zat, reaksi kimia dasar, & listrik magnet',
+    deskripsiRingkas: 'Eksperimen virtual susunan atom partikel materi, perubahan wujud padat-cair-gas, dan praktikum sirkuit listrik aman.',
+    caraBelajar: [
+      'Amati interaksi antar molekul dan perubahan fasa zat di Concord Consortium.',
+      'Rakit sirkuit listrik arus searah (DC) dan uji konduktivitas zat di PhET.',
+      'Pahami perbedaan campuran homogen, heterogen, serta reaksi kimia sederhana.'
+    ],
+    tools: [
+      {
+        name: 'Concord Consortium',
+        url: 'https://learn.concord.org',
+        type: 'Model Partikel & Reaksi Kimia',
+        description: 'Simulasi interaktif wujud zat, difusi gas, ikatan atom, dan interaksi molekuler tingkat dasar.',
+        tag: 'Molekuler STEM'
+      },
+      {
+        name: 'PhET Interactive Simulations',
+        url: 'https://phet.colorado.edu',
+        type: 'Simulasi Kimia & Listrik',
+        description: 'Eksperimen kerapatan zat, gaya gerak partikel, dan perakitan sirkuit listrik interaktif.',
+        tag: 'Praktikum Virtual'
+      }
+    ],
     icon: 'Atom',
     popular: true,
     tingkatKelas: 'Kelas 7 - 9 SMP'
   },
   {
-    id: 'smp-ips',
+    id: 'smp-ips-geografi',
     jenjang: 'SMP',
-    mataPelajaran: 'IPS Terpadu',
+    mataPelajaran: 'IPS (Geografi)',
     categoryGroup: 'Sosial & Humaniora',
-    fokus: 'Geografi dunia, sejarah peradaban, & cagar budaya',
-    deskripsiRingkas: 'Menyelami situs keajaiban dunia, museum peradaban kuno, dan analisis geografis bentang alam berbagai benua.',
+    fokus: 'Lempeng tektonik, dinamika bumi, bentang alam, & cagar budaya',
+    deskripsiRingkas: 'Simulasi lempeng tektonik, gempa bumi, siklus batuan, iklim lingkungan, serta penjelajahan situs cagar budaya dunia.',
     caraBelajar: [
-      'Jalan-jalan virtual 360 derajat di Candi Borobudur, Colosseum, atau Piramida Giza.',
-      'Lihat koleksi artefak purbakala dan lukisan sejarah dengan resolusi gigapixel.',
-      'Bandingkan topografi pegunungan, palung laut, dan lembah sungai di Google Earth.'
+      'Simulasikan pergerakan lempeng tektonik dan pembentukan pegunungan di Concord Consortium.',
+      'Jelajahi topografi bumi, sungai, dan kepulauan Nusantara secara 3D dengan Google Earth.',
+      'Kunjungi museum peradaban dan cagar budaya di Google Arts & Culture.'
     ],
     tools: [
+      {
+        name: 'Concord Consortium',
+        url: 'https://learn.concord.org',
+        type: 'Simulasi Geosains & Tektonik',
+        description: 'Eksplorasi interaktif Seismic Explorer, pergeseran lempeng bumi, siklus batuan, dan sistem iklim global.',
+        tag: 'Geosains STEM'
+      },
       {
         name: 'Google Earth Web',
         url: 'https://earth.google.com/web/',
         type: 'Eksplorasi Planet 3D',
-        description: 'Ukur jarak antar benua, pantau ketinggian gunung, dan pelajari lempeng tektonik bumi.',
+        description: 'Ukur jarak antar benua, pantau ketinggian gunung, dan pelajari bentang alam bumi.',
         tag: 'Geografi Global'
       },
       {
@@ -360,7 +406,7 @@ export const LEARNING_DATA: LearningItem[] = [
         tag: 'Sejarah & Budaya'
       }
     ],
-    icon: 'Globe',
+    icon: 'Compass',
     tingkatKelas: 'Kelas 7 - 9 SMP'
   },
   {
@@ -368,8 +414,8 @@ export const LEARNING_DATA: LearningItem[] = [
     jenjang: 'SMP',
     mataPelajaran: 'Bahasa (Indonesia & Asing)',
     categoryGroup: 'Bahasa',
-    fokus: 'Tata bahasa, struktur kalimat, & permainan tebak kata kelas',
-    deskripsiRingkas: 'Tantangan seru memahami part of speech, majas, peribahasa, serta game kosakata kolaboratif bersama teman sekelas.',
+    fokus: 'Tata bahasa, struktur kalimat, & permainan kosa kata kelas',
+    deskripsiRingkas: 'Tantangan seru memahami tata bahasa, majas, peribahasa, serta game kosakata kolaboratif bersama teman sekelas.',
     caraBelajar: [
       'Mainkan kuis Baamboozle bersama teman untuk menguji daya ingat kosakata.',
       'Cari bahan literasi cerpen dan artikel tematik di StoryWeaver.',
@@ -431,28 +477,35 @@ export const LEARNING_DATA: LearningItem[] = [
   {
     id: 'sma-matematika',
     jenjang: 'SMA',
-    mataPelajaran: 'Matematika Peminatan & Wajib',
+    mataPelajaran: 'Matematika',
     categoryGroup: 'Matematika',
-    fokus: 'Kalkulus, grafik trigonometri, irisan kerucut, vektor 3D',
-    deskripsiRingkas: 'Putar bidang koordinat tiga dimensi (X, Y, Z), gambar grafik turunan dan integral, serta periksa perpotongan kurva ruang.',
+    fokus: 'Kalkulus, grafik fungsi 3D, irisan kerucut, vektor, & geometri analitik',
+    deskripsiRingkas: 'Eksplorasi kalkulus visual, putar bidang koordinat 3D xyz, dan konstruksi geometri fraktal serta aljabar tingkat lanjut.',
     caraBelajar: [
-      'Plot persamaan permukaan z = f(x, y) di GeoGebra 3D dan putar menggunakan mouse.',
-      'Eksplorasi teorema geometri Euclides dan konstruksi lingkaran di Desmos Geometry.',
-      'Amati perilaku garis singgung kurva untuk memahami konsep limit dan turunan.'
+      'Plot persamaan permukaan z = f(x, y) dan bidang ruang di GeoGebra.',
+      'Gunakan Mathigon untuk mempelajari visualisasi kalkulus, teori graf, dan fraktal interaktif.',
+      'Eksplorasi konstruksi geometri transformasi di Desmos Geometry.'
     ],
     tools: [
       {
-        name: 'GeoGebra 3D Calculator',
-        url: 'https://www.geogebra.org/3d',
-        type: 'Visualisasi Ruang 3 Dimensi',
-        description: 'Alat peraga vektor 3 dimensi, bidang sejajar, bola, kerucut, dan kubus dalam koordinat xyz.',
-        tag: 'Visualisasi 3D'
+        name: 'GeoGebra',
+        url: 'https://geogebra.org',
+        type: 'Software Matematika 2D & 3D',
+        description: 'Platform dinamis aljabar, kalkulus, vektor 3D, geometri analitik, dan alat peraga matematika lengkap.',
+        tag: 'Paling Lengkap'
+      },
+      {
+        name: 'Mathigon',
+        url: 'https://mathigon.org',
+        type: 'Kanvas & Pembelajaran Visual',
+        description: 'Buku teks matematika interaktif dengan materi kalkulus visual, origami geometri, fraktal, dan kanvas Polypad.',
+        tag: 'Interaktif'
       },
       {
         name: 'Desmos Geometry',
         url: 'https://www.desmos.com/geometry',
         type: 'Studio Geometri Analitik',
-        description: 'Konstruksi sudut, garis bagi, transformasi geometri rotasi dan dilatasi presisi tinggi.',
+        description: 'Konstruksi sudut, transformasi refleksi/rotasi, dan kurva fungsi presisi tinggi.',
         tag: 'Presisi Tinggi'
       }
     ],
@@ -465,27 +518,34 @@ export const LEARNING_DATA: LearningItem[] = [
     jenjang: 'SMA',
     mataPelajaran: 'Fisika',
     categoryGroup: 'Sains',
-    fokus: 'Mekanika, gelombang, optik, & rangkaian listrik interaktif',
-    deskripsiRingkas: 'Simulasi gerak parabola, pembiasan cermin/lensa cembung, efek Doppler pada gelombang suara, dan induksi elektromagnetik.',
+    fokus: 'Mekanika, gelombang optik, rangkaian sirkuit analog, & fisika kuantum',
+    deskripsiRingkas: 'Simulasi interaktif sirkuit listrik analog, osilasi gelombang riak, efek Doppler, induksi elektromagnetik, dan mekanika klasik.',
     caraBelajar: [
-      'Uji hukum kekekalan momentum pada simulasi tumbukan oPhysics.',
-      'Gunakan pembiasan prisma cahaya di PhET untuk melihat spektrum warna optik.',
-      'Hitung percepatan gravitasi dan hambatan udara pada gerak jatuh bebas.'
+      'Rancang dan amati aliran sinyal arus listrik AC/DC dan simulasi gelombang di Falstad Applets.',
+      'Uji fenomena kuantum, efek fotolistrik, dan medan magnet di PhET.',
+      'Analisis gerak parabola dan tumbukan momentum di oPhysics.'
     ],
     tools: [
       {
-        name: 'oPhysics Interactive Physics',
+        name: 'Falstad Applets',
+        url: 'https://falstad.com',
+        type: 'Simulator Gelombang & Sirkuit',
+        description: 'Simulator interaktif sirkuit listrik analog, osilasi gelombang riak, optik, mekanika kuantum, dan termodinamika.',
+        tag: 'Simulator Fisika'
+      },
+      {
+        name: 'PhET Interactive Simulations',
+        url: 'https://phet.colorado.edu',
+        type: 'Lab Fisika Modern & Listrik',
+        description: 'Simulasi efek fotolistrik, struktur atom Rutherford, gelombang radio, dan hukum Faraday.',
+        tag: 'Resmi PhET'
+      },
+      {
+        name: 'oPhysics Interactive',
         url: 'https://ophysics.com/',
         type: 'Simulasi Fisika Khusus SMA',
         description: 'Koleksi simulasi fisika klasik mekanika, kinematika, fluida, optik geometris, dan gelombang.',
         tag: 'Sangat Detail'
-      },
-      {
-        name: 'PhET Physics Advanced',
-        url: 'https://phet.colorado.edu/in/',
-        type: 'Lab Fisika Modern & Listrik',
-        description: 'Simulasi efek fotolistrik, struktur atom Rutherford, gelombang radio, dan hukum Faraday.',
-        tag: 'Simulasi Standar'
       }
     ],
     icon: 'Zap',
@@ -497,27 +557,42 @@ export const LEARNING_DATA: LearningItem[] = [
     jenjang: 'SMA',
     mataPelajaran: 'Kimia',
     categoryGroup: 'Sains',
-    fokus: 'Visualisasi ikatan molekul 3D & tabel periodik dinamis',
-    deskripsiRingkas: 'Bangun rumus molekul organik/anorganik dalam tampilan 3D dan bedah data elektron valensi, isotop, serta titik leleh setiap unsur.',
+    fokus: 'Struktur molekul 3D, kesetimbangan kimia, larutan asam-basa, & tabel periodik dinamis',
+    deskripsiRingkas: 'Simulasi interaktif reaksi kesetimbangan kimia, dinamika molekuler, pemodelan rumus 3D bola-dan-batang, serta data tabel unsur.',
     caraBelajar: [
-      'Gambarkan struktur Lewis di MolView lalu konversi menjadi model ruang 3D bola-dan-batang.',
-      'Pelajari tren keelektronegatifan dan konfigurasi elektron pada Ptable.',
-      'Simulasikan ikatan kovalen polar dan ikatan hidrogen antar molekul.'
+      'Uji kesetimbangan reaksi kimia dan pH larutan asam-basa di PhET Interactive Simulations.',
+      'Eksplorasi dinamika molekuler, ikatan kimia, dan hukum gas di Concord Consortium.',
+      'Gambarkan rumus senyawa di MolView untuk diubah ke model ruang 3D.',
+      'Pelajari tren elektronegativitas dan konfigurasi orbital di Ptable.'
     ],
     tools: [
+      {
+        name: 'PhET Interactive Simulations',
+        url: 'https://phet.colorado.edu',
+        type: 'Lab Kimia Interaktif',
+        description: 'Simulasi kesetimbangan reaksi, larutan asam-basa, molaritas, dan polaritas molekul dari University of Colorado.',
+        tag: 'Resmi PhET'
+      },
+      {
+        name: 'Concord Consortium',
+        url: 'https://learn.concord.org',
+        type: 'Molecular Workbench STEM',
+        description: 'Simulasi interaktif dinamika molekuler, reaksi endoterm/eksoterm, laju reaksi kimia, dan elektrokimia.',
+        tag: 'Model Molekuler'
+      },
       {
         name: 'MolView Molecular Viewer',
         url: 'https://molview.org/',
         type: 'Model Molekul Kimia 3D',
         description: 'Aplikasi web pemodelan senyawa kimia dan spektroskopi dengan kemampuan render 3D molekul nyata.',
-        tag: 'Model 3D Molekul'
+        tag: 'Model 3D'
       },
       {
-        name: 'Ptable Tabel Periodik Dinamis',
+        name: 'Ptable Tabel Periodik',
         url: 'https://ptable.com/',
-        type: 'Tabel Periodik Paling Lengkap',
-        description: 'Tabel periodik interaktif dengan visualisasi wujud zat berdasarkan suhu (Kelvin), orbital elektron, dan sifat kimia.',
-        tag: 'Lengkap & Interaktif'
+        type: 'Tabel Periodik Lengkap',
+        description: 'Tabel periodik dinamis dengan visualisasi orbital elektron, isotop, titik leleh, dan wujud zat.',
+        tag: 'Data Lengkap'
       }
     ],
     icon: 'FlaskConical',
@@ -529,27 +604,74 @@ export const LEARNING_DATA: LearningItem[] = [
     jenjang: 'SMA',
     mataPelajaran: 'Biologi',
     categoryGroup: 'Sains',
-    fokus: 'Anatomi tubuh manusia 3D, genetika, & bioteknologi',
-    deskripsiRingkas: 'Eksplorasi lapisan otot, kerangka tulang, sistem syaraf manusia secara 3D 360°, serta mekanisme replikasi DNA dan hukum Mendel.',
+    fokus: 'Genetika molekuler, seleksi alam, replikasi DNA, sintesis protein, & anatomi 3D',
+    deskripsiRingkas: 'Model interaktif hereditas sifat Mendel, proses transkripsi DNA, mekanisme adaptasi evolusi, dan anatomi sistem organ tubuh 3D.',
     caraBelajar: [
-      'Bongkar-pasang organ jantung, paru-paru, dan sistem rangka di Anatomy Learning.',
-      'Lakukan ekstraksi DNA virtual dan pelajari pewarisan sifat genetik di Learn.Genetics.',
-      'Telusuri jalur persilangan alel monohibrid dan dihibrid.'
+      'Amati simulasi seleksi alam, genetika populasi, dan ekspresi gen di PhET.',
+      'Pelajari replikasi DNA, sintesis protein, dan mutasi genetik di Concord Consortium.',
+      'Bongkar-pasang lapisan anatomi organ manusia di Anatomy Learning 3D.',
+      'Telusuri modul bioteknologi DNA rekombinan di Learn.Genetics.'
     ],
     tools: [
+      {
+        name: 'PhET Interactive Simulations',
+        url: 'https://phet.colorado.edu',
+        type: 'Simulasi Biologi & Ekologi',
+        description: 'Simulasi seleksi alam, spesiasi, ekspresi gen, dan fotosintesis dari University of Colorado Boulder.',
+        tag: 'Resmi PhET'
+      },
+      {
+        name: 'Concord Consortium',
+        url: 'https://learn.concord.org',
+        type: 'Genetika Molekuler STEM',
+        description: 'Model interaktif replikasi DNA, sintesis protein, mutasi gen, hereditas Mendel, dan aliran energi biologi.',
+        tag: 'Genetika STEM'
+      },
       {
         name: 'Anatomy Learning 3D',
         url: 'https://anatomylearning.com/',
         type: 'Atlas Anatomi Manusia 3D',
-        description: 'Model anatomi tubuh manusia interaktif tingkat medis yang dapat diputar, dipotong lapisannya, dan diidentifikasi.',
-        tag: 'Anatomi 3D Medis'
+        description: 'Model anatomi tubuh manusia interaktif yang dapat diputar 360°, dipotong lapisannya, dan diidentifikasi.',
+        tag: 'Anatomi 3D'
       },
       {
-        name: 'Learn.Genetics (Univ. of Utah)',
+        name: 'Learn.Genetics',
         url: 'https://learn.genetics.utah.edu/',
         type: 'Lab Genetika & Molekuler',
-        description: 'Panduan interaktif nomor satu untuk genetika, mutasi gen, kloning, dan teknologi DNA rekombinan.',
-        tag: 'Materi Genetika'
+        description: 'Panduan interaktif untuk genetika, mutasi gen, kloning, dan teknologi DNA rekombinan.',
+        tag: 'Riset Genetika'
+      }
+    ],
+    icon: 'Leaf',
+    popular: true,
+    tingkatKelas: 'Kelas 10 - 12 SMA'
+  },
+  {
+    id: 'sma-biologi-kesehatan',
+    jenjang: 'SMA',
+    mataPelajaran: 'Biologi (Kesehatan)',
+    categoryGroup: 'Sains',
+    fokus: 'Sistem imunologi, transmisi epidemi penyakit, kurva penularan, & fisiologi tubuh',
+    deskripsiRingkas: 'Simulasi interaktif cara kerja sistem imun manusia, persebaran patogen, dinamika epidemiologi herd immunity, dan organ fisiologis.',
+    caraBelajar: [
+      'Jalankan simulasi esai interaktif transmisi virus dan kekebalan kelompok (herd immunity) di Explorable Explanations.',
+      'Pelajari mekanisme antibodi, sel darah putih, dan respon imun terhadap infeksi.',
+      'Bedah anatomi sistem sirkulasi, respirasi, dan pencernaan manusia secara 3D.'
+    ],
+    tools: [
+      {
+        name: 'Explorable Explanations',
+        url: 'https://explorabl.es',
+        type: 'Simulasi Interaktif Epidemi & Imunitas',
+        description: 'Esai interaktif pemodelan dinamika transmisi virus, kurva epidemiologi, dan respon sistem kekebalan tubuh.',
+        tag: 'Eksplorasi Interaktif'
+      },
+      {
+        name: 'Anatomy Learning 3D',
+        url: 'https://anatomylearning.com/',
+        type: 'Atlas Anatomi & Fisiologi',
+        description: 'Model anatomi 3D sistem organ manusia tingkat medis untuk memahami kesehatan fisiologis.',
+        tag: 'Anatomi 3D'
       }
     ],
     icon: 'HeartPulse',
@@ -560,57 +682,95 @@ export const LEARNING_DATA: LearningItem[] = [
     jenjang: 'SMA',
     mataPelajaran: 'Geografi',
     categoryGroup: 'Sosial & Humaniora',
-    fokus: 'Cuaca, angin, arus laut global real-time, lapisan geosfer',
-    deskripsiRingkas: 'Pantau pergerakan siklon tropis, arah angin jet stream, tekanan udara, dan arus laut di seluruh dunia secara langsung.',
+    fokus: 'Lempeng tektonik, model iklim global, meteorologi cuaca real-time, & geosfer',
+    deskripsiRingkas: 'Simulasi lempeng tektonik bumi, atmosfer iklim global, serta visualisasi radar angin, arus laut, dan siklon cuaca langsung.',
     caraBelajar: [
-      'Amati pola pergerakan angin dan gelombang laut di sekitar kepulauan Nusantara.',
-      'Analisis fenomena El Nino dan La Nina melalui peta anomali suhu permukaan laut.',
-      'Pantau curah hujan radar dan formasi awan satelit cuaca.'
+      'Simulasikan pergerakan lempeng tektonik, gempa bumi, dan siklus air bumi di Concord Consortium.',
+      'Amati aliran angin siklon dan suhu permukaan laut Nusantara di Ventusky.',
+      'Analisis pola perubahan cuaca dan presipitasi global di radar Windy.'
     ],
     tools: [
+      {
+        name: 'Concord Consortium',
+        url: 'https://learn.concord.org',
+        type: 'Simulasi Geosains & Tektonik',
+        description: 'Eksplorasi interaktif model lempeng tektonik bumi, perubahan iklim global, dan atmosfer bumi.',
+        tag: 'Geosains STEM'
+      },
       {
         name: 'Ventusky Weather Live',
         url: 'https://www.ventusky.com/',
         type: 'Peta Meteorologi Real-Time',
-        description: 'Visualisasi aliran angin, suhu, curah hujan, dan gelombang laut global berbasis animasi partikel fluida.',
-        tag: 'Data Cuaca Live'
+        description: 'Visualisasi aliran angin, suhu, curah hujan, dan gelombang laut global berbasis partikel fluida dinamis.',
+        tag: 'Data Live'
       },
       {
         name: 'Windy Meteorologi Dinamis',
         url: 'https://www.windy.com/',
-        type: 'Radar Angin & Siklon',
-        description: 'Peta prediksi cuaca profesional yang digunakan oleh pilot dan meteorolog dunia, sangat visual untuk belajar iklim.',
-        tag: 'Radar Dinamis'
+        type: 'Radar Angin & Presipitasi',
+        description: 'Peta prediksi cuaca resolusi tinggi profesional untuk analisis iklim dan pergerakan geosfer.',
+        tag: 'Radar Cuaca'
       }
     ],
     icon: 'CloudRain',
     tingkatKelas: 'Kelas 10 - 12 SMA'
   },
   {
-    id: 'sma-sosiologi-ekonomi',
+    id: 'sma-sosiologi',
     jenjang: 'SMA',
-    mataPelajaran: 'Sosiologi & Ekonomi',
+    mataPelajaran: 'Sosiologi',
     categoryGroup: 'Sosial & Humaniora',
-    fokus: 'Data statistik global, tren demografi, kesenjangan ekonomi',
-    deskripsiRingkas: 'Analisis grafik korelasi antara pendapatan per kapita dengan angka harapan hidup, piramida penduduk, dan tren global.',
+    fokus: 'Interaksi kelompok sosial, diferensiasi, segregasi, & dinamika masyarakat',
+    deskripsiRingkas: 'Simulasi interaktif dinamika kelompok sosial, segregasi pemukiman (Parable of the Polygons), serta data statistik perubahan masyarakat.',
     caraBelajar: [
-      'Putar animasi kurun waktu 100 tahun di Gapminder untuk melihat kemajuan negara berkembang.',
-      'Unduh data empiris kemiskinan, energi terbarukan, dan inflasi dari Our World in Data.',
-      'Kaji fenomena bonus demografi dan urbanisasi masyarakat modern.'
+      'Jalankan simulasi interaktif tentang bagaimana bias individu kecil memicu segregasi kelompok di Explorable Explanations.',
+      'Analisis tren kemiskinan, kesetaraan sosial, dan indeks demografi dunia di Gapminder.',
+      'Kaji faktor pendorong integrasi dan disintegrasi dalam tatanan masyarakat majemuk.'
     ],
     tools: [
       {
+        name: 'Explorable Explanations',
+        url: 'https://explorabl.es',
+        type: 'Simulasi Dinamika Sosial & Segregasi',
+        description: 'Simulasi interaktif konsep sosiologi terkemuka (Parable of the Polygons karya Nicky Case & Vi Hart) tentang dinamika sosial.',
+        tag: 'Eksplorasi Sosial'
+      },
+      {
         name: 'Gapminder Tools',
         url: 'https://www.gapminder.org/tools/',
-        type: 'Grafik Statistik Dinamis Hans Rosling',
-        description: 'Alat visualisasi data interaktif untuk membantah mitos dunia dengan statistik resmi PBB & Bank Dunia.',
-        tag: 'Visual Data Dunia'
+        type: 'Statistik Sosial & Demografi Global',
+        description: 'Grafik interaktif tren kemiskinan, angka harapan hidup, dan indeks pembangunan sosial masyarakat dunia.',
+        tag: 'Data Statistik'
+      }
+    ],
+    icon: 'Globe',
+    tingkatKelas: 'Kelas 10 - 12 SMA'
+  },
+  {
+    id: 'sma-psikologi-teori-sosial',
+    jenjang: 'SMA',
+    mataPelajaran: 'Psikologi / Teori Sosial',
+    categoryGroup: 'Sosial & Humaniora',
+    fokus: 'Teori permainan (Game Theory), kepercayaan antar-individu, bias kognitif, & psikologi massa',
+    deskripsiRingkas: 'Eksplorasi interaktif The Evolution of Trust, perilaku kooperatif vs kecurangan, bias kognitif, dan pengambilan keputusan manusia.',
+    caraBelajar: [
+      'Mainkan simulasi The Evolution of Trust di Explorable Explanations untuk memahami psikologi kepercayaan dan kerja sama.',
+      'Eksplorasi bagaimana informasi dan persepsi membentuk perilaku kolektif masyarakat.',
+      'Pelajari data riset empiris perilaku manusia dan modal sosial di Our World in Data.'
+    ],
+    tools: [
+      {
+        name: 'Explorable Explanations',
+        url: 'https://explorabl.es',
+        type: 'Simulasi Teori Permainan & Kepercayaan',
+        description: 'Simulasi interaktif The Evolution of Trust, bias kognitif, persepsi probabilitas, dan psikologi perilaku kelompok.',
+        tag: 'Game Theory'
       },
       {
         name: 'Our World in Data',
         url: 'https://ourworldindata.org/',
-        type: 'Riset Data Empiris',
-        description: 'Publikasi sains berbasis data empiris tentang tantangan global terbesar: kemiskinan, iklim, kesehatan, dan ekonomi.',
+        type: 'Riset Empiris Perilaku & Kesejahteraan',
+        description: 'Publikasi sains berbasis data empiris tentang tantangan global, modal sosial, dan perilaku masyarakat.',
         tag: 'Riset Terpercaya'
       }
     ],
@@ -622,26 +782,26 @@ export const LEARNING_DATA: LearningItem[] = [
     jenjang: 'SMA',
     mataPelajaran: 'Sejarah',
     categoryGroup: 'Sosial & Humaniora',
-    fokus: 'Atlas peta perubahan batas wilayah peradaban dunia',
-    deskripsiRingkas: 'Garis waktu kronologis ekspansi kerajaan Nusantara, Kekaisaran Romawi, Perang Dunia, hingga perubahan batas negara modern.',
+    fokus: 'Atlas kronologis peta batas wilayah peradaban dunia & Nusantara',
+    deskripsiRingkas: 'Garis waktu kronologis ekspansi kerajaan Nusantara, Kekaisaran Romawi, Perang Dunia, hingga batas geopolitik modern.',
     caraBelajar: [
-      'Geser slider tahun di Omniatlas untuk melihat peta dunia pada tahun 1500, 1945, hingga sekarang.',
-      'Jelajahi arsip dokumen naskah proklamasi dan foto bersejarah di Google Arts & Culture.',
-      'Hubungkan letak geografis benteng masa lampau dengan jalur perdagangan rempah-rempah.'
+      'Geser slider tahun di Omniatlas untuk melihat peta dunia dari abad ke abad.',
+      'Jelajahi arsip naskah bersejarah dan artefak di Google Arts & Culture.',
+      'Kaji perubahan geopolitik dan dampaknya terhadap peradaban manusia.'
     ],
     tools: [
       {
         name: 'Omniatlas Kronologi Peta',
         url: 'https://omniatlas.com/',
         type: 'Peta Geopolitik Sejarah',
-        description: 'Atlas sejarah interaktif yang memetakan batas wilayah politik di seluruh benua dari abad ke abad.',
+        description: 'Atlas sejarah interaktif yang memetakan batas wilayah politik di seluruh benua dari masa ke masa.',
         tag: 'Garis Waktu Peta'
       },
       {
-        name: 'Google Arts & Culture Sejarah',
+        name: 'Google Arts & Culture',
         url: 'https://artsandculture.google.com/',
         type: 'Dokumentasi Sejarah Dunia',
-        description: 'Pameran daring momen-momen bersejarah dunia dan warisan budaya Indonesia dengan narasi interaktif.',
+        description: 'Pameran daring momen bersejarah dunia dan warisan budaya Indonesia dengan narasi interaktif.',
         tag: 'Arsip Bersejarah'
       }
     ],

@@ -266,7 +266,7 @@ export default function App() {
                 </div>
 
                 {/* 3. Direct Link action buttons on the right */}
-                <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row items-stretch md:items-end lg:items-center gap-2 flex-shrink-0 md:min-w-[210px]">
+                <div className="flex flex-wrap items-center justify-start md:justify-end gap-2 flex-shrink-0 md:max-w-[280px]">
                   {item.tools.map((tool, idx) => (
                     <a
                       key={idx}
@@ -274,10 +274,10 @@ export default function App() {
                       href={tool.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-between sm:justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-extrabold text-[#172d45] bg-[#ffa92d] hover:bg-[#ffb84e] active:bg-[#e6921b] border border-[#ffa92d] hover:shadow-md hover:shadow-[#ffa92d]/30 transition-all shadow-xs group/btn cursor-pointer"
+                      className="inline-flex items-center justify-between sm:justify-center gap-2 px-3.5 py-2.5 rounded-xl text-xs font-extrabold text-[#172d45] bg-[#ffa92d] hover:bg-[#ffb84e] active:bg-[#e6921b] border border-[#ffa92d] hover:shadow-md hover:shadow-[#ffa92d]/30 transition-all shadow-xs group/btn cursor-pointer"
                     >
                       <span>{tool.name}</span>
-                      <ExternalLink className="w-3.5 h-3.5 text-[#172d45] group-hover/btn:translate-x-0.5 transition-transform" />
+                      <ExternalLink className="w-3.5 h-3.5 text-[#172d45] group-hover/btn:translate-x-0.5 transition-transform shrink-0" />
                     </a>
                   ))}
                 </div>
