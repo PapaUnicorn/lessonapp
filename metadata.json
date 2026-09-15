@@ -1,0 +1,7 @@
+{
+  "name": "Portal Belajar Interaktif",
+  "description": "Direktori dan portal pembelajaran interaktif langsung tanpa login untuk siswa jenjang SD, SMP, dan SMA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
